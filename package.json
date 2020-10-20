@@ -1,0 +1,24 @@
+{
+  "name": "js-crashcourse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/app.js",
+  "scripts": {
+    "build": "npm run clean & babel server -d public",
+    "clean": "rimraf public",
+    "start": "nodemon server/app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "rimraf": "^3.0.2",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  }
+}
